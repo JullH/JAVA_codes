@@ -1,4 +1,4 @@
-package day12;
+package src.day12;
 
 enum cka {
     summer("nae", 234);

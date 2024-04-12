@@ -1,4 +1,4 @@
-package day12;
+package src.day12;
 
 enum Week {
     MONDAY("星期一"),

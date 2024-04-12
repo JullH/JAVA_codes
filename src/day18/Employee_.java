@@ -1,4 +1,4 @@
-package day18;
+package src.day18;
 
 import java.util.HashSet;
 import java.util.Iterator;

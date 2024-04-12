@@ -1,4 +1,4 @@
-package day08;
+package src.day08;
 
 class Teach extends Teachar {
     public Teach(String name, int age, String post, double salary, double grade) {

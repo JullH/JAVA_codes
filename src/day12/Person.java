@@ -1,4 +1,4 @@
-package day12;
+package src.day12;
 
 class Person {
     private String name;
@@ -10,7 +10,7 @@ class Person {
     }
 
     void passRiver() {
-        Vehicles vehicles = jiaotonggongjugngchang.getBoat();
+        Vehicles vehicles = (Vehicles) jiaotonggongjugngchang.getBoat();
         vehicles.work();
         System.out.println(vehicles.hashCode());
     }

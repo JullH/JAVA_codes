@@ -1,4 +1,4 @@
-package day12;
+package src.day12;
 
 class A {
     private String name = "小米";

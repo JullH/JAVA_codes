@@ -1,4 +1,4 @@
-package day06;
+package src.day06;
 
 public class Work extends Empoloyee {
     public Work(String name, double salary) {

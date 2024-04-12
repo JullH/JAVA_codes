@@ -1,4 +1,4 @@
-package day08;
+package src.day08;
 
 class Teachar {
     private String name;

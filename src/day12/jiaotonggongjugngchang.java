@@ -1,4 +1,4 @@
-package day12;
+package src.day12;
 
 class jiaotonggongjugngchang {
     private static Horse horse = new Horse();

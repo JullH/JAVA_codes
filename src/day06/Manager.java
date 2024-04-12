@@ -1,4 +1,4 @@
-package day06;
+package src.day06;
 
 public class Manager extends Empoloyee {
     private double bonus;

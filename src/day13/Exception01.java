@@ -1,4 +1,4 @@
-package day13;
+package src.day13;
 
 public class Exception01 {
     public Exception01() {

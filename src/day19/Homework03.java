@@ -1,4 +1,4 @@
-package day19;
+package src.day19;
 
 import java.io.PrintStream;
 import java.util.HashMap;

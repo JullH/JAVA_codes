@@ -1,4 +1,4 @@
-package day14;
+package src.day14;
 
 class Person extends RuntimeException {
     public Person(String message) {

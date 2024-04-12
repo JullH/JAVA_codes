@@ -1,4 +1,4 @@
-package day03;
+package src.day03;
 
 import java.io.PrintStream;
 

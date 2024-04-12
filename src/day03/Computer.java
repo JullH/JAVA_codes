@@ -1,4 +1,4 @@
-package day03;
+package src.day03;
 
 public class Computer {
     private String CPU;

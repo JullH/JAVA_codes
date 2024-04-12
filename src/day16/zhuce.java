@@ -1,4 +1,4 @@
-package day16;
+package src.day16;
 
 class zhuce {
     private String name;

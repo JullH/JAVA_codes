@@ -1,4 +1,4 @@
-package day02;
+package src.day02;
 
 public class Yg {
     public Yg() {

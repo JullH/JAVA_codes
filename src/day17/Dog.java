@@ -1,4 +1,4 @@
-package day17;
+package src.day17;
 
 class Dog {
     private String name;

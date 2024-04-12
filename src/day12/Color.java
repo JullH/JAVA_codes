@@ -1,4 +1,4 @@
-package day12;
+package src.day12;
 
 enum Color implements IMyInterface {
         RED(255, 0, 0),

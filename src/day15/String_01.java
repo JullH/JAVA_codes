@@ -1,4 +1,4 @@
-package day15;
+package src.day15;
 
 public class String_01 {
     public String_01() {

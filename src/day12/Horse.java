@@ -1,4 +1,4 @@
-package day12;
+package src.day12;
 
 class Horse implements Vehicles {
     public Horse() {

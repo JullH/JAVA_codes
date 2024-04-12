@@ -1,11 +1,11 @@
-package day12;
+package src.day12;
 
 public class Homework06 {
     public Homework06() {
     }
 
     public static void main(String[] args) {
-        Person person = new Person("唐僧", jiaotonggongjugngchang.getHorse());
+        Person person = new Person("唐僧",jiaotonggongjugngchang.getHorse());
         person.Common();
         person.passRiver();
         person.Common();
