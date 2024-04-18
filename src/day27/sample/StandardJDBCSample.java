@@ -1,8 +1,6 @@
-package src.day27;
-
-import javax.naming.spi.DirectoryManager;
+package src.day27.sample;
 import java.sql.*;
-import java.text.Format;
+
 
 /**
  * @version 1.0
