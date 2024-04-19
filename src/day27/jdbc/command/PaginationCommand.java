@@ -4,10 +4,7 @@ package src.day27.jdbc.command;
 import src.day06.Empoloyee;
 import src.day27.common.Dbutils;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -35,12 +32,14 @@ public class PaginationCommand implements Command {
             rs = pstmt.executeQuery();
             List<Emp> list = new ArrayList();
             while (rs.next()) {
+
                 Integer eno = rs.getInt("eno");
                 String ename = rs.getString("ename");
                 Float salary = rs.getFloat("salary");
                 String dname = rs.getString("dname");
+                Date hiredate = rs.getDate("hiredate");
 
-                list.add(new Emp(eno,ename,salary,dname)) ;
+                list.add(new Emp(eno,ename,salary,dname,hiredate));
 
             }
             System.out.println(list.size());
