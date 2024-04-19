@@ -5,7 +5,7 @@ import src.day27.common.Dbutils;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.util.Scanner;
+
 
 /**
  * @version 1.0

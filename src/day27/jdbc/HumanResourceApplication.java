@@ -15,8 +15,7 @@ public class HumanResourceApplication {
         System.out.println("2-办理员工入职：");
         System.out.println("3-调整员工薪资：");
         System.out.println("4-员工离职：");
-
-
+        System.out.println("5-分页查询员工数据：");
         System.out.println("选择功能");
         Scanner scanner = new Scanner(System.in);
         Integer cmd = scanner.nextInt();
@@ -36,6 +35,10 @@ public class HumanResourceApplication {
                 break;
             case 4:
                 Command = new DeleteCommand();
+                Command.execute();
+                break;
+            case 5:
+                Command = new PaginationCommand();
                 Command.execute();
                 break;
         }
