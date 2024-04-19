@@ -1,6 +1,7 @@
 package src.day27.jdbc;
 
 import src.day27.jdbc.command.Command;
+import src.day27.jdbc.command.PstmtQueryCommand;
 import src.day27.jdbc.command.QueryCommand;
 
 import java.util.Scanner;
@@ -17,7 +18,7 @@ public class HumanResourceApplication {
         Integer cmd = scanner.nextInt();
         switch (cmd){
             case 1:
-                Command Command = new QueryCommand();
+                Command Command = new PstmtQueryCommand();
                 Command.execute();
                 break;
         }

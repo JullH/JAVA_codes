@@ -8,23 +8,26 @@ import java.util.Scanner;
  * @auther JullH
  */
 
-public class QueryCommand implements Command{
+public class PstmtQueryCommand implements Command{
     @Override
     public void execute() {
         System.out.println("输入部门名称：");
         Scanner scanner = new Scanner(System.in);
         String pdname = scanner.next();
         Connection conn = null;
-        Statement stmt = null;
+//        Statement stmt = null;
+        PreparedStatement pstmt = null;
         ResultSet rs = null;
         try {
             //1.加载并注册JDBC驱动
             Class.forName("com.mysql.cj.jdbc.Driver");
             //2.创建数据库连接
             conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/imooc?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serviceTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true","root","123456");
-            //3.创建statement对象
-            stmt = conn.createStatement();
-            rs = stmt.executeQuery("select * from employee where dname = '" + pdname + "'");
+            //3.创建PreparedStatement对象
+            String sql = "select * from employee where dname = ?";
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1,pdname);
+            rs = pstmt.executeQuery();
 
             //4.遍历查询结果
             while (rs.next()){
@@ -48,8 +51,8 @@ public class QueryCommand implements Command{
             }
 
             try {
-                if(stmt != null){
-                    stmt.close();
+                if(pstmt != null){
+                    pstmt.close();
                 }
             } catch (SQLException e) {
                 e.printStackTrace();
@@ -63,6 +66,7 @@ public class QueryCommand implements Command{
                 e.printStackTrace();
             }
         }
+
 
     }
 }
