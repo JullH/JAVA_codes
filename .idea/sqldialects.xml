@@ -2,6 +2,6 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/f7e1b559-8448-46e5-a196-435981e53952/console_1.sql" dialect="MySQL" />
-    <file url="file://$PROJECT_DIR$/src/day27/jdbc/command/InsertCommand.java" dialect="H2" />
+    <file url="file://$PROJECT_DIR$/src/jdbc/jdbc/command/InsertCommand.java" dialect="H2" />
   </component>
 </project>
