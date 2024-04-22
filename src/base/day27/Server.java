@@ -18,20 +18,21 @@ public class Server {
         byte[] buffer = new byte[1024 * 64];
         DatagramPacket packet = new DatagramPacket(buffer,buffer.length);
 
-        //3.接受数据
-        socket.receive(packet);
+        while (true) {
+            //3.接受数据
+            socket.receive(packet);
 
-        //4.打印接受数据
-        //接受多少，输出多少
-        String rs = new String(buffer,0,packet.getLength());
-        System.out.println(rs);
+            //4.打印接受数据
+            //接受多少，输出多少
+            String rs = new String(buffer,0,packet.getLength());
+            System.out.println(rs);
+            System.out.println(packet.getAddress());
+            System.out.println(packet.getPort());
+            System.out.println("---------------------");
 
-
-        System.out.println(packet.getAddress());
-        System.out.println(packet.getPort());
-
+        }
 
         //关闭数据发送
-        socket.close();
+//        socket.close();
     }
 }
